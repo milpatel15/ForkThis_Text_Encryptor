@@ -1,6 +1,6 @@
 from cryptography.fernet import Fernet, InvalidToken
 
-def generate_ket_str() :
+def generate_key_str() :
     return(Fernet.generate_key().decode())
 
 def encrypt_message(message: str, key: str) -> str :
